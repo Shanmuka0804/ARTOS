@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Highscore</title>
+<link rel="stylesheet" href="highscore.css">
+</head>
+<body>
+<div class="container">
+  <h1>Quiz Results</h1>
+  <table id="quizResults">
+    <tr>
+      <th>Quiz</th>
+      <th>Score</th>
+    </tr>
+  </table>
+</div>
+<script>
+  window.onload = function() {
+    var quizResults = JSON.parse(localStorage.getItem('quizResults'));
+
+    if (quizResults) {
+      var quizResultsTable = document.getElementById('quizResults');
+      var headerRow = document.createElement('tr');
+      var quizHeader = document.createElement('th');
+      quizHeader.textContent = 'Quiz';
+      var scoreHeader = document.createElement('th');
+      scoreHeader.textContent = 'Score';
+      headerRow.appendChild(quizHeader);
+      headerRow.appendChild(scoreHeader);
+      quizResultsTable.appendChild(headerRow);
+      
+
+      for (var i = 0; i < quizResults.length; i++) {
+        var row = document.createElement('tr');
+        var quizCell = document.createElement('td');
+        quizCell.textContent = 'Quiz ' + (i + 1);
+        var scoreCell = document.createElement('td');
+        scoreCell.textContent = quizResults[i];
+        row.appendChild(quizCell);
+        row.appendChild(scoreCell);
+        quizResultsTable.appendChild(row);
+      }
+    }
+  };
+</script>
+
+</body>
+</html>
