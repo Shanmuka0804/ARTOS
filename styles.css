@@ -1,139 +1,86 @@
-/* Add your custom styles here */
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
 
-/* Example styles for header */
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 header {
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  ```css
-  header nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Example styles for hero section */
-  #hero {
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
-  
-  .hero-content {
-    text-align: center;
-  }
-  
-  .hero-content h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Example styles for other sections */
-  section {
-    padding: 50px 0;
-  }
-  
-  section h2 {
-    text-align: center;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  .pricing-card {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .plan {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .plan h3 {
-    margin: 0;
-  }
-  
-  .plan p {
-    margin: 10px 0;
-  }
-  
-  /* Example styles for testimonials section */
-  .testimonial {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial p {
-    margin-bottom: 10px;
-  }
-  
-  .testimonial cite {
-    font-style: italic;
-  }
-  
-  /* Example styles for contact section */
-  form input,
-  form textarea,
-  form button {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Example styles for footer */
-  footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-content, .features-content, .contact-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-content ul {
+  list-style: none;
+}
+
+.contact-content form input, .contact-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-content form button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}

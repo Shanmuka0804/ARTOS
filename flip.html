@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .flip-container {
+      perspective: 1000px;
+      display: inline-block;
+    }
+
+    .flip-container:hover .flipper,
+    .flip-container.hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+    .flip-container,
+    .front,
+    .back {
+      width: 300px;
+      height: 200px;
+    }
+
+    .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .front,
+    .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+text-align:center;
+    }
+
+    .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <p>Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="flip-container">
+      <div class="flipper">
+        <div class="front">
+          <img src= "http://bargadss.com/wp-content/themes/bargads/img/website_dev/webdev-img-01.png" alt="Profile Picture">
+<p>Myself</p>
+        </div>
+        <div class="back">
+          <img src="C:/Users/priya/OneDrive/Pictures/Saved Pictures/hbh.jpg" alt="Flipped Profile Picture">
+ <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and responsive websites that provide great user experiences.</p>
+        </div>
+      </div>
+    </div>
+    <!--<p>I am a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and responsive websites that provide great user experiences.</p>-->
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of Project 1</p>
+      <img src="project1.jpg" alt="Project 1">
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of Project 2</p>
+      <img src="project2.jpg" alt="Project 2">
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my resume <a href="resume.pdf" download>here</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: john@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 John Doe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
